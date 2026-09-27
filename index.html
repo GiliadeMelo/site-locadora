@@ -14,8 +14,15 @@
     <meta property="og:description" content="Encontre carros e motos para trabalhar com aplicativos em Fortaleza e região. Consulte os veículos disponíveis e fale com a LV pelo WhatsApp.">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="pt_BR">
-    <meta property="og:image" content="image/logo.jpg">
+    <meta property="og:image" content="https://www.lvlocacoes.com.br/image/logo.jpg">
+    <meta property="og:image:alt" content="LV Locações de Veículos">
     <meta property="og:url" content="https://www.lvlocacoes.com.br">
+
+    <!-- Twitter Card (fallback para compartilhamento) -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="LV Locações de Veículos | Carros e Motos em Fortaleza">
+    <meta name="twitter:description" content="Encontre carros e motos para trabalhar com aplicativos em Fortaleza e região.">
+    <meta name="twitter:image" content="https://www.lvlocacoes.com.br/image/logo.jpg">
 
     <!-- Favicon Placeholder -->
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚗</text></svg>">
@@ -79,7 +86,8 @@
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
       "name": "LV Locações de Veículos",
-      "image": "image/logo.jpg",
+      "image": "https://www.lvlocacoes.com.br/image/logo.jpg",
+      "logo": "https://www.lvlocacoes.com.br/image/logo.jpg",
       "description": "Locação de carros e motos para motoristas de aplicativo em Fortaleza e região, Ceará.",
       "address": {
         "@type": "PostalAddress",
@@ -99,12 +107,15 @@
     <header class="fixed top-0 left-0 right-0 z-40 bg-brand-black/95 backdrop-blur-sm border-b border-neutral-800 transition-all duration-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16 md:h-20">
-                <!-- Logo -->
+                <!-- Logo (POSIÇÃO 1 do PDF) -->
                 <a href="#inicio" class="flex items-center group" aria-label="LV Locações de Veículos - Início">
                     <img src="image/logo.jpg" 
                          alt="LV Locação de Veículos" 
                          class="h-12 md:h-14 w-auto object-contain"
-                         loading="eager">
+                         width="1254"
+                         height="1254"
+                         loading="eager"
+                         decoding="async">
                 </a>
 
                 <!-- Desktop Navigation -->
@@ -195,13 +206,18 @@
                             </a>
                         </div>
                     </div>
+                    <!-- Imagem Hero (POSIÇÃO 2 do PDF) -->
                     <div class="hidden lg:block relative">
                         <div class="relative rounded-2xl overflow-hidden shadow-2xl border border-neutral-800">
                             <img src="image/byd-dolphin-mini-recarga.jpg" 
-                                 alt="Carro moderno em ambiente urbano, ideal para motoristas de aplicativo" 
+                                 alt="BYD Dolphin Mini em recarga, ideal para motoristas de aplicativo em Fortaleza" 
                                  class="w-full h-auto object-cover transform hover:scale-105 transition-transform duration-700"
+                                 width="1280"
+                                 height="720"
                                  loading="eager"
-                                 onerror="this.src='https://placehold.co/800x600/171717/f59e0b?text=Imagem+do+Veículo+(Substitua+por+image/byd-dolphin-mini-recarga.jpg)'">
+                                 decoding="async"
+                                 fetchpriority="high"
+                                 onerror="this.onerror=null;this.src='https://placehold.co/1280x720/171717/f59e0b?text=Imagem+do+Veiculo';">
                             <div class="absolute inset-0 bg-gradient-to-t from-brand-black/60 to-transparent"></div>
                         </div>
                     </div>
@@ -268,7 +284,7 @@
                     <button class="filter-btn px-6 py-2.5 rounded-full text-sm font-bold transition-all duration-200 bg-neutral-800 text-neutral-300 hover:bg-neutral-700 hover:text-white border border-neutral-700" data-filter="moto" aria-pressed="false">Motos</button>
                 </div>
 
-                <!-- Vehicle Grid -->
+                <!-- Vehicle Grid (posições 3 e 4 do PDF são injetadas aqui) -->
                 <div id="vehicle-grid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
                     <!-- Vehicles will be injected here by JS -->
                 </div>
@@ -293,7 +309,7 @@
             </div>
         </section>
 
-        <!-- CARS AND MOTORCYCLES CATEGORIES (Buttons Removed) -->
+        <!-- CARS AND MOTORCYCLES CATEGORIES (posições 5 e 6 do PDF) -->
         <section class="py-16 md:py-24 bg-white">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="grid md:grid-cols-2 gap-8">
@@ -309,7 +325,7 @@
 
                     <!-- Motorcycles Category -->
                     <article class="relative rounded-2xl overflow-hidden bg-brand-black group">
-                        <div class="absolute inset-0 bg-[url('image/Honda-CG.jpg')] bg-cover bg-center opacity-40 group-hover:opacity-50 transition-opacity duration-500"></div>
+                        <div class="absolute inset-0 bg-[url('image/Honda_CG.jpg')] bg-cover bg-center opacity-40 group-hover:opacity-50 transition-opacity duration-500"></div>
                         <div class="absolute inset-0 bg-gradient-to-t from-brand-black via-brand-black/50 to-transparent"></div>
                         <div class="relative p-8 md:p-10 flex flex-col h-full justify-end min-h-[300px]">
                             <h3 class="text-2xl md:text-3xl font-extrabold text-white mb-3">MOTOS PARA TRABALHAR</h3>
@@ -448,10 +464,14 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid md:grid-cols-3 gap-12 mb-12">
                 <div>
+                    <!-- Logo Footer (POSIÇÃO 7 do PDF) -->
                     <img src="image/logo.jpg" 
                          alt="LV Locação de Veículos" 
                          class="h-16 w-auto object-contain mb-4"
-                         loading="lazy">
+                         width="1254"
+                         height="1254"
+                         loading="lazy"
+                         decoding="async">
                     <p class="text-neutral-400 text-sm mb-4">Seu trabalho. Seu objetivo. Nossa mobilidade.</p>
                     <p class="text-neutral-400 text-sm flex items-center gap-2">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
@@ -518,7 +538,13 @@
             slogan: "Seu trabalho. Seu objetivo. Nossa mobilidade."
         };
 
-        // Vehicle Data Architecture (Honda CG Fan 160 added)
+        // ============================================================
+        // DADOS DOS VEÍCULOS
+        // ============================================================
+        // Caminhos corrigidos conforme a pasta image/:
+        //  - BYD.jpg       (500x322)  → Carro elétrico
+        //  - Honda_CG.jpg  (448x446)  → Motocicleta
+        // ============================================================
         const vehicles = [
             {
                 id: "byd-dolphin-mini-gs",
@@ -526,7 +552,9 @@
                 category: "Carro elétrico",
                 type: "carro",
                 description: "Uma opção moderna e econômica para mobilidade urbana e rotina de trabalho.",
-                image: "image/byd.jpg",
+                image: "image/BYD.jpg",
+                imageWidth: 500,
+                imageHeight: 322,
                 available: true
             },
             {
@@ -535,7 +563,9 @@
                 category: "Motocicleta",
                 type: "moto",
                 description: "Econômica, ágil e ideal para quem busca mobilidade no dia a dia de trabalho.",
-                image: "image/Honda-CG.jpg",
+                image: "image/Honda_CG.jpg",
+                imageWidth: 448,
+                imageHeight: 446,
                 available: true
             }
         ];
@@ -579,6 +609,15 @@
             return `https://wa.me/${BUSINESS.whatsapp}?text=${encodeURIComponent(message)}`;
         }
 
+        function escapeHtml(str) {
+            return String(str)
+                .replace(/&/g, "&amp;")
+                .replace(/</g, "&lt;")
+                .replace(/>/g, "&gt;")
+                .replace(/"/g, "&quot;")
+                .replace(/'/g, "&#039;");
+        }
+
         function renderVehicles(filter = 'todos') {
             const grid = document.getElementById('vehicle-grid');
             const emptyState = document.getElementById('empty-state');
@@ -599,24 +638,30 @@
                 const whatsappMessage = `Olá! Tenho interesse no ${vehicle.name} e gostaria de saber a disponibilidade e as condições de locação.`;
                 const whatsappLink = generateWhatsAppLink(whatsappMessage);
                 const availabilityText = vehicle.available ? 'Disponível para consulta' : 'Consulte disponibilidade';
-                const availabilityClass = vehicle.available ? 'text-green-400' : 'text-brand-gold';
+                const availabilityClass = vehicle.available ? 'text-green-600' : 'text-brand-gold';
+                const safeName = escapeHtml(vehicle.name);
+                const safeCategory = escapeHtml(vehicle.category);
+                const safeDescription = escapeHtml(vehicle.description);
 
                 const card = document.createElement('article');
                 card.className = 'bg-white rounded-xl overflow-hidden border border-neutral-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col';
                 card.innerHTML = `
                     <div class="relative h-48 overflow-hidden bg-neutral-100">
                         <img src="${vehicle.image}" 
-                             alt="${vehicle.name} - ${vehicle.category}" 
+                             alt="${safeName} - ${safeCategory}" 
                              class="w-full h-full object-cover"
+                             width="${vehicle.imageWidth}"
+                             height="${vehicle.imageHeight}"
                              loading="lazy"
-                             onerror="this.src='https://placehold.co/800x600/171717/f59e0b?text=Imagem+do+Veículo+(Substitua+o+arquivo+local)'">
+                             decoding="async"
+                             onerror="this.onerror=null;this.src='https://placehold.co/800x600/171717/f59e0b?text=Imagem+do+Veiculo';">
                         <div class="absolute top-3 left-3 bg-brand-black/80 backdrop-blur-sm text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
-                            ${vehicle.category}
+                            ${safeCategory}
                         </div>
                     </div>
                     <div class="p-6 flex flex-col flex-grow">
-                        <h3 class="text-xl font-bold text-brand-black mb-2">${vehicle.name}</h3>
-                        <p class="text-neutral-600 text-sm mb-4 flex-grow">${vehicle.description}</p>
+                        <h3 class="text-xl font-bold text-brand-black mb-2">${safeName}</h3>
+                        <p class="text-neutral-600 text-sm mb-4 flex-grow">${safeDescription}</p>
                         <div class="flex items-center gap-2 mb-4 text-sm font-medium ${availabilityClass}">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
                             ${availabilityText}
@@ -628,7 +673,7 @@
                            data-cta="whatsapp"
                            data-vehicle="${vehicle.id}"
                            data-location="catalog"
-                           aria-label="Consultar o ${vehicle.name} pelo WhatsApp">
+                           aria-label="Consultar o ${safeName} pelo WhatsApp">
                             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
                             Consultar pelo WhatsApp
                         </a>
@@ -649,11 +694,11 @@
                             aria-expanded="false" 
                             aria-controls="${id}"
                             id="btn-${id}">
-                        <span class="font-bold text-brand-black pr-4">${item.question}</span>
+                        <span class="font-bold text-brand-black pr-4">${escapeHtml(item.question)}</span>
                         <svg class="w-5 h-5 text-brand-gold transition-transform duration-300 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
                     </button>
                     <div id="${id}" class="hidden px-5 pb-5 text-neutral-600 text-sm leading-relaxed" role="region" aria-labelledby="btn-${id}">
-                        ${item.answer}
+                        ${escapeHtml(item.answer)}
                     </div>
                 `;
                 

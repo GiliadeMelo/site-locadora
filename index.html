@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LV Locações de Veículos | Carros e Motos em Fortaleza</title>
+    <meta name="description" content="Encontre carros e motos para trabalhar com aplicativos em Fortaleza e região. Consulte os veículos disponíveis e fale com a LV pelo WhatsApp.">
+    <meta name="keywords" content="locação de veículos em Fortaleza, aluguel de carros em Fortaleza, carro para Uber em Fortaleza, carro para motorista de aplicativo, moto para trabalhar com aplicativo">
+    <meta name="author" content="LV Locações de Veículos">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Social Sharing -->
+    <meta property="og:title" content="LV Locações de Veículos | Carros e Motos em Fortaleza">
+    <meta property="og:description" content="Encontre carros e motos para trabalhar com aplicativos em Fortaleza e região. Consulte os veículos disponíveis e fale com a LV pelo WhatsApp.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:image" content="assets/hero-bg.jpg">
+    <meta property="og:url" content="https://www.lvlocacoes.com.br">
+
+    <!-- Favicon Placeholder -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚗</text></svg>">
+
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS v3+ CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            black: '#0a0a0a',
+                            graphite: '#171717',
+                            light: '#fafafa',
+                            gold: '#f59e0b',
+                            goldHover: '#d97706',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom CSS for Accessibility and Refinements -->
+    <style>
+        html {
+            scroll-padding-top: 5rem;
+        }
+        
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+                scroll-behavior: auto !important;
+            }
+        }
+
+        :focus-visible {
+            outline: 2px solid #f59e0b;
+            outline-offset: 2px;
+        }
+
+        .safe-bottom {
+            padding-bottom: env(safe-area-inset-bottom, 1rem);
+        }
+    </style>
+
+    <!-- Structured Data: LocalBusiness -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "LV Locações de Veículos",
+      "image": "assets/hero-bg.jpg",
+      "description": "Locação de carros e motos para motoristas de aplicativo em Fortaleza e região, Ceará.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Fortaleza",
+        "addressRegion": "CE",
+        "addressCountry": "BR"
+      },
+      "telephone": "+5585994497491",
+      "url": "https://www.lvlocacoes.com.br",
+      "priceRange": "$$"
+    }
+    </script>
+</head>
+<body class="bg-brand-light text-neutral-800 font-sans antialiased overflow-x-hidden">
+
+    <!-- HEADER -->
+    <header class="fixed top-0 left-0 right-0 z-40 bg-brand-black/95 backdrop-blur-sm border-b border-neutral-800 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16 md:h-20">
+                <!-- Logo -->
+                <a href="#inicio" class="flex items-center gap-2 group" aria-label="LV Locações de Veículos - Início">
+                    <div class="flex flex-col">
+                        <span class="text-2xl font-extrabold text-white tracking-tight group-hover:text-brand-gold transition-colors">LV</span>
+                        <span class="text-[0.6rem] uppercase tracking-widest text-neutral-400 font-semibold">Locação de Veículos</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden lg:flex items-center gap-8" aria-label="Navegação principal">
+                    <a href="#inicio" class="text-sm font-medium text-neutral-300 hover:text-brand-gold transition-colors">Início</a>
+                    <a href="#veiculos" class="text-sm font-medium text-neutral-300 hover:text-brand-gold transition-colors">Veículos</a>
+                    <a href="#como-funciona" class="text-sm font-medium text-neutral-300 hover:text-brand-gold transition-colors">Como Funciona</a>
+                    <a href="#sobre" class="text-sm font-medium text-neutral-300 hover:text-brand-gold transition-colors">Sobre a LV</a>
+                    <a href="#faq" class="text-sm font-medium text-neutral-300 hover:text-brand-gold transition-colors">FAQ</a>
+                    <a href="#contato" class="text-sm font-medium text-neutral-300 hover:text-brand-gold transition-colors">Contato</a>
+                </nav>
+
+                <!-- Desktop CTA -->
+                <div class="hidden lg:block">
+                    <a href="https://wa.me/5585994497491?text=Ol%C3%A1!%20Vi%20o%20site%20da%20LV%20Loca%C3%A7%C3%B5es%20e%20gostaria%20de%20consultar%20os%20ve%C3%ADculos%20dispon%C3%ADveis%20para%20trabalhar%20com%20aplicativo." 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       class="inline-flex items-center gap-2 bg-brand-gold hover:bg-brand-goldHover text-brand-black font-bold py-2.5 px-5 rounded-lg transition-all duration-200 transform hover:scale-105 focus-visible:ring-2 focus-visible:ring-brand-gold focus-visible:ring-offset-2 focus-visible:ring-offset-brand-black"
+                       data-cta="whatsapp"
+                       data-location="header">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        Falar no WhatsApp
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="lg:hidden p-2 text-neutral-300 hover:text-white focus-visible:ring-2 focus-visible:ring-brand-gold rounded-md" aria-expanded="false" aria-controls="mobile-menu" aria-label="Abrir menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="menu-open"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="menu-close hidden"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <div id="mobile-menu" class="lg:hidden hidden bg-brand-graphite border-t border-neutral-800 absolute w-full safe-bottom">
+            <nav class="flex flex-col p-4 space-y-2" aria-label="Navegação mobile">
+                <a href="#inicio" class="mobile-nav-link block px-4 py-3 text-neutral-300 hover:text-brand-gold hover:bg-neutral-800 rounded-lg font-medium transition-colors">Início</a>
+                <a href="#veiculos" class="mobile-nav-link block px-4 py-3 text-neutral-300 hover:text-brand-gold hover:bg-neutral-800 rounded-lg font-medium transition-colors">Veículos</a>
+                <a href="#como-funciona" class="mobile-nav-link block px-4 py-3 text-neutral-300 hover:text-brand-gold hover:bg-neutral-800 rounded-lg font-medium transition-colors">Como Funciona</a>
+                <a href="#sobre" class="mobile-nav-link block px-4 py-3 text-neutral-300 hover:text-brand-gold hover:bg-neutral-800 rounded-lg font-medium transition-colors">Sobre a LV</a>
+                <a href="#faq" class="mobile-nav-link block px-4 py-3 text-neutral-300 hover:text-brand-gold hover:bg-neutral-800 rounded-lg font-medium transition-colors">FAQ</a>
+                <a href="#contato" class="mobile-nav-link block px-4 py-3 text-neutral-300 hover:text-brand-gold hover:bg-neutral-800 rounded-lg font-medium transition-colors">Contato</a>
+                <a href="https://wa.me/5585994497491?text=Ol%C3%A1!%20Vi%20o%20site%20da%20LV%20Loca%C3%A7%C3%B5es%20e%20gostaria%20de%20consultar%20os%20ve%C3%ADculos%20dispon%C3%ADveis%20para%20trabalhar%20com%20aplicativo." 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   class="mobile-nav-link mt-4 flex items-center justify-center gap-2 bg-brand-gold hover:bg-brand-goldHover text-brand-black font-bold py-3 px-4 rounded-lg transition-colors"
+                   data-cta="whatsapp"
+                   data-location="mobile-menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    Falar no WhatsApp
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section id="inicio" class="relative bg-brand-black pt-24 pb-16 md:pt-32 md:pb-24 overflow-hidden">
+            <div class="absolute inset-0 bg-[url('assets/hero-bg.jpg')] bg-cover bg-center opacity-20"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-brand-black via-brand-black/80 to-transparent"></div>
+            
+            <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div class="space-y-6 text-center lg:text-left">
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-gold/10 border border-brand-gold/30 text-brand-gold text-xs font-bold uppercase tracking-wider">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                            Fortaleza e Região | CE
+                        </div>
+                        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight">
+                            CARROS E MOTOS PARA QUEM <span class="text-brand-gold">RODA DE APP</span>
+                        </h1>
+                        <p class="text-lg text-neutral-300 max-w-xl mx-auto lg:mx-0">
+                            Tenha o veículo para trabalhar com Uber, 99 e outros aplicativos em Fortaleza e região. Solução prática para sua rotina de trabalho.
+                        </p>
+                        <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4">
+                            <a href="#veiculos" class="inline-flex items-center justify-center gap-2 bg-white text-brand-black font-bold py-3.5 px-8 rounded-lg hover:bg-neutral-200 transition-all duration-200 focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-brand-black" data-cta="scroll" data-location="hero">
+                                Ver Veículos Disponíveis
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                            </a>
+                            <a href="https://wa.me/5585994497491?text=Ol%C3%A1!%20Vi%20o%20site%20da%20LV%20Loca%C3%A7%C3%B5es%20e%20gostaria%20de%20consultar%20os%20ve%C3%ADculos%20dispon%C3%ADveis%20para%20trabalhar%20com%20aplicativo." 
+                               target="_blank" 
+                               rel="noopener noreferrer"
+                               class="inline-flex items-center justify-center gap-2 bg-brand-gold hover:bg-brand-goldHover text-brand-black font-bold py-3.5 px-8 rounded-lg transition-all duration-200 transform hover:scale-105 focus-visible:ring-2 focus-visible:ring-brand-gold focus-visible:ring-offset-2 focus-visible:ring-offset-brand-black"
+                               data-cta="whatsapp"
+                               data-location="hero">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                                Falar no WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                    <div class="hidden lg:block relative">
+                        <div class="relative rounded-2xl overflow-hidden shadow-2xl border border-neutral-800">
+                            <img src="assets/hero-veiculo.jpg" 
+                                 alt="Carro moderno em ambiente urbano, ideal para motoristas de aplicativo" 
+                                 class="w-full h-auto object-cover transform hover:scale-105 transition-transform duration-700"
+                                 loading="eager"
+                                 onerror="this.src='https://placehold.co/800x600/171717/f59e0b?text=Imagem+do+Veículo+(Substitua+por+assets/hero-veiculo.jpg)'">
+                            <div class="absolute inset-0 bg-gradient-to-t from-brand-black/60 to-transparent"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- VALUE PROPOSITION -->
+        <section class="py-16 md:py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-12 md:mb-16">
+                    <h2 class="text-3xl md:text-4xl font-extrabold text-brand-black mb-4">SEU TRABALHO COMEÇA COM A MOBILIDADE CERTA</h2>
+                    <p class="text-neutral-600 text-lg">A LV Locações de Veículos oferece carros e motos para quem precisa de uma solução prática para trabalhar com aplicativos. Consulte as opções disponíveis e encontre o veículo adequado para sua rotina.</p>
+                </div>
+                
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <article class="bg-brand-light p-6 rounded-xl border border-neutral-200 hover:border-brand-gold/50 hover:shadow-lg transition-all duration-300 group">
+                        <div class="w-12 h-12 bg-brand-gold/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-brand-gold/20 transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-brand-black mb-2">CARROS</h3>
+                        <p class="text-neutral-600 text-sm">Opções para quem busca um veículo para trabalhar com aplicativos.</p>
+                    </article>
+
+                    <article class="bg-brand-light p-6 rounded-xl border border-neutral-200 hover:border-brand-gold/50 hover:shadow-lg transition-all duration-300 group">
+                        <div class="w-12 h-12 bg-brand-gold/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-brand-gold/20 transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/><path d="M12 17V3"/></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-brand-black mb-2">MOTOS</h3>
+                        <p class="text-neutral-600 text-sm">Alternativas para quem procura mobilidade para trabalhar.</p>
+                    </article>
+
+                    <article class="bg-brand-light p-6 rounded-xl border border-neutral-200 hover:border-brand-gold/50 hover:shadow-lg transition-all duration-300 group">
+                        <div class="w-12 h-12 bg-brand-gold/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-brand-gold/20 transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-brand-black mb-2">ATENDIMENTO PELO WHATSAPP</h3>
+                        <p class="text-neutral-600 text-sm">Consulte veículos, disponibilidade e condições diretamente com a LV.</p>
+                    </article>
+
+                    <article class="bg-brand-light p-6 rounded-xl border border-neutral-200 hover:border-brand-gold/50 hover:shadow-lg transition-all duration-300 group">
+                        <div class="w-12 h-12 bg-brand-gold/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-brand-gold/20 transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-brand-black mb-2">FORTALEZA E REGIÃO</h3>
+                        <p class="text-neutral-600 text-sm">Atendimento voltado para motoristas da região.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- VEHICLE CATALOG -->
+        <section id="veiculos" class="py-16 md:py-24 bg-brand-graphite">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-10">
+                    <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-4">VEÍCULOS DISPONÍVEIS</h2>
+                    <p class="text-neutral-400 text-lg">Confira algumas das opções disponíveis para locação.</p>
+                </div>
+
+                <!-- Filters -->
+                <div class="flex flex-wrap justify-center gap-3 mb-10" role="group" aria-label="Filtrar veículos por categoria">
+                    <button class="filter-btn active px-6 py-2.5 rounded-full text-sm font-bold transition-all duration-200 bg-brand-gold text-brand-black" data-filter="todos" aria-pressed="true">Todos</button>
+                    <button class="filter-btn px-6 py-2.5 rounded-full text-sm font-bold transition-all duration-200 bg-neutral-800 text-neutral-300 hover:bg-neutral-700 hover:text-white border border-neutral-700" data-filter="carro" aria-pressed="false">Carros</button>
+                    <button class="filter-btn px-6 py-2.5 rounded-full text-sm font-bold transition-all duration-200 bg-neutral-800 text-neutral-300 hover:bg-neutral-700 hover:text-white border border-neutral-700" data-filter="moto" aria-pressed="false">Motos</button>
+                </div>
+
+                <!-- Vehicle Grid -->
+                <div id="vehicle-grid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+                    <!-- Vehicles will be injected here by JS -->
+                </div>
+
+                <!-- Empty State (Hidden by default) -->
+                <div id="empty-state" class="hidden text-center py-12">
+                    <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-neutral-800 mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Nenhum veículo disponível nesta categoria no momento.</h3>
+                    <p class="text-neutral-400 mb-6">Fale com a LV pelo WhatsApp para consultar outras opções.</p>
+                    <a href="https://wa.me/5585994497491?text=Ol%C3%A1!%20Gostaria%20de%20consultar%20os%20ve%C3%ADculos%20dispon%C3%ADveis%20para%20loca%C3%A7%C3%A3o." 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       class="inline-flex items-center gap-2 bg-brand-gold hover:bg-brand-goldHover text-brand-black font-bold py-3 px-6 rounded-lg transition-colors"
+                       data-cta="whatsapp"
+                       data-location="empty-state">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        Falar no WhatsApp
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CARS AND MOTORCYCLES CATEGORIES (Buttons Removed) -->
+        <section class="py-16 md:py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Cars Category -->
+                    <article class="relative rounded-2xl overflow-hidden bg-brand-black group">
+                        <div class="absolute inset-0 bg-[url('assets/categoria-carros.jpg')] bg-cover bg-center opacity-40 group-hover:opacity-50 transition-opacity duration-500"></div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-brand-black via-brand-black/50 to-transparent"></div>
+                        <div class="relative p-8 md:p-10 flex flex-col h-full justify-end min-h-[300px]">
+                            <h3 class="text-2xl md:text-3xl font-extrabold text-white mb-3">CARROS PARA MOTORISTAS DE APP</h3>
+                            <p class="text-neutral-300 mb-6 max-w-md">Encontre uma opção de veículo para sua rotina de trabalho e consulte as condições de locação diretamente com a LV.</p>
+                        </div>
+                    </article>
+
+                    <!-- Motorcycles Category -->
+                    <article class="relative rounded-2xl overflow-hidden bg-brand-black group">
+                        <div class="absolute inset-0 bg-[url('assets/categoria-motos.jpg')] bg-cover bg-center opacity-40 group-hover:opacity-50 transition-opacity duration-500"></div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-brand-black via-brand-black/50 to-transparent"></div>
+                        <div class="relative p-8 md:p-10 flex flex-col h-full justify-end min-h-[300px]">
+                            <h3 class="text-2xl md:text-3xl font-extrabold text-white mb-3">MOTOS PARA TRABALHAR</h3>
+                            <p class="text-neutral-300 mb-6 max-w-md">Mais uma alternativa de mobilidade para quem busca um veículo para trabalhar com aplicativos.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- HOW IT WORKS -->
+        <section id="como-funciona" class="py-16 md:py-24 bg-brand-light">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-12 md:mb-16">
+                    <h2 class="text-3xl md:text-4xl font-extrabold text-brand-black mb-4">COMO FUNCIONA</h2>
+                    <p class="text-neutral-600 text-lg">Processo simples e transparente para você começar a rodar.</p>
+                </div>
+
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 relative">
+                    <div class="hidden lg:block absolute top-8 left-0 right-0 h-0.5 bg-neutral-200 -z-10 mx-12"></div>
+
+                    <div class="relative text-center">
+                        <div class="w-16 h-16 mx-auto bg-brand-black text-brand-gold rounded-full flex items-center justify-center text-2xl font-extrabold mb-6 border-4 border-brand-light shadow-md">01</div>
+                        <h3 class="text-lg font-bold text-brand-black mb-2">ESCOLHA O VEÍCULO</h3>
+                        <p class="text-neutral-600 text-sm">Confira as opções disponíveis em nosso catálogo.</p>
+                    </div>
+
+                    <div class="relative text-center">
+                        <div class="w-16 h-16 mx-auto bg-brand-black text-brand-gold rounded-full flex items-center justify-center text-2xl font-extrabold mb-6 border-4 border-brand-light shadow-md">02</div>
+                        <h3 class="text-lg font-bold text-brand-black mb-2">FALE COM A LV NO WHATSAPP</h3>
+                        <p class="text-neutral-600 text-sm">Entre em contato pelo WhatsApp para tirar dúvidas.</p>
+                    </div>
+
+                    <div class="relative text-center">
+                        <div class="w-16 h-16 mx-auto bg-brand-black text-brand-gold rounded-full flex items-center justify-center text-2xl font-extrabold mb-6 border-4 border-brand-light shadow-md">03</div>
+                        <h3 class="text-lg font-bold text-brand-black mb-2">CONSULTE AS CONDIÇÕES</h3>
+                        <p class="text-neutral-600 text-sm">Receba informações sobre disponibilidade, plano e requisitos.</p>
+                    </div>
+
+                    <div class="relative text-center">
+                        <div class="w-16 h-16 mx-auto bg-brand-gold text-brand-black rounded-full flex items-center justify-center text-2xl font-extrabold mb-6 border-4 border-brand-light shadow-md">04</div>
+                        <h3 class="text-lg font-bold text-brand-black mb-2">PREPARE-SE PARA RODAR</h3>
+                        <p class="text-neutral-600 text-sm">Após a contratação, tenha seu veículo para sua rotina de trabalho.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TRUST SECTION -->
+        <section class="py-16 md:py-24 bg-brand-black">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-12 md:mb-16">
+                    <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-4">MAIS TRANQUILIDADE PARA SUA ROTINA</h2>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-brand-graphite p-8 rounded-xl border border-neutral-800 text-center hover:border-brand-gold/30 transition-colors duration-300">
+                        <div class="w-14 h-14 mx-auto bg-brand-gold/10 rounded-full flex items-center justify-center mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">VEÍCULOS</h3>
+                        <p class="text-neutral-400">Apresentação clara das opções disponíveis para sua necessidade.</p>
+                    </div>
+
+                    <div class="bg-brand-graphite p-8 rounded-xl border border-neutral-800 text-center hover:border-brand-gold/30 transition-colors duration-300">
+                        <div class="w-14 h-14 mx-auto bg-brand-gold/10 rounded-full flex items-center justify-center mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">ATENDIMENTO</h3>
+                        <p class="text-neutral-400">Suporte e comunicação ágil e direta pelo WhatsApp.</p>
+                    </div>
+
+                    <div class="bg-brand-graphite p-8 rounded-xl border border-neutral-800 text-center hover:border-brand-gold/30 transition-colors duration-300">
+                        <div class="w-14 h-14 mx-auto bg-brand-gold/10 rounded-full flex items-center justify-center mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">MOBILIDADE</h3>
+                        <p class="text-neutral-400">Soluções pensadas para quem precisa de um veículo para trabalhar.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT LV -->
+        <section id="sobre" class="py-16 md:py-24 bg-white">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl md:text-4xl font-extrabold text-brand-black mb-6">SOBRE A LV LOCAÇÕES DE VEÍCULOS</h2>
+                <p class="text-lg text-neutral-600 mb-8 leading-relaxed">
+                    A LV Locações de Veículos nasceu para oferecer uma alternativa prática para quem precisa de um veículo para trabalhar com aplicativos. Com opções de carros e motos, a empresa atende motoristas de Fortaleza e região que buscam mobilidade para alcançar seus objetivos profissionais.
+                </p>
+                <div class="inline-block bg-brand-gold/10 border border-brand-gold/30 rounded-xl p-6 md:p-8">
+                    <p class="text-xl md:text-2xl font-extrabold text-brand-black italic">"Seu trabalho. Seu objetivo. Nossa mobilidade."</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section id="faq" class="py-16 md:py-24 bg-brand-light">
+            <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-extrabold text-brand-black mb-4">PERGUNTAS FREQUENTES</h2>
+                    <p class="text-neutral-600">Tire suas dúvidas sobre a locação de veículos.</p>
+                </div>
+
+                <div class="space-y-4" id="faq-container">
+                    <!-- FAQ items injected by JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- FINAL CTA -->
+        <section class="py-16 md:py-24 bg-brand-black relative overflow-hidden">
+            <div class="absolute inset-0 bg-[url('assets/hero-bg.jpg')] bg-cover bg-center opacity-10"></div>
+            <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl md:text-5xl font-extrabold text-white mb-6">SEU PRÓXIMO DIA DE TRABALHO PODE COMEÇAR AQUI.</h2>
+                <p class="text-xl text-neutral-300 mb-10 max-w-2xl mx-auto">Consulte os veículos disponíveis e veja as opções para sua rotina em Fortaleza e região.</p>
+                <a href="https://wa.me/5585994497491?text=Ol%C3%A1!%20Vi%20o%20site%20da%20LV%20Loca%C3%A7%C3%B5es%20e%20gostaria%20de%20consultar%20os%20ve%C3%ADculos%20dispon%C3%ADveis%20para%20trabalhar%20com%20aplicativo." 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   class="inline-flex items-center gap-3 bg-brand-gold hover:bg-brand-goldHover text-brand-black font-bold py-4 px-10 rounded-xl text-lg transition-all duration-200 transform hover:scale-105 focus-visible:ring-2 focus-visible:ring-brand-gold focus-visible:ring-offset-2 focus-visible:ring-offset-brand-black shadow-lg shadow-brand-gold/20"
+                   data-cta="whatsapp"
+                   data-location="final-cta">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    Consultar Veículos pelo WhatsApp
+                </a>
+                <p class="mt-6 text-neutral-500 text-sm flex items-center justify-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                    Fortaleza e região, Ceará
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer id="contato" class="bg-brand-graphite border-t border-neutral-800 pt-16 pb-8 safe-bottom">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-12 mb-12">
+                <div>
+                    <div class="flex flex-col mb-4">
+                        <span class="text-2xl font-extrabold text-white tracking-tight">LV</span>
+                        <span class="text-[0.6rem] uppercase tracking-widest text-neutral-400 font-semibold">Locação de Veículos</span>
+                    </div>
+                    <p class="text-neutral-400 text-sm mb-4">Seu trabalho. Seu objetivo. Nossa mobilidade.</p>
+                    <p class="text-neutral-400 text-sm flex items-center gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                        Fortaleza e região, Ceará
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="text-white font-bold mb-4">Navegação</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#inicio" class="text-neutral-400 hover:text-brand-gold transition-colors">Início</a></li>
+                        <li><a href="#veiculos" class="text-neutral-400 hover:text-brand-gold transition-colors">Veículos</a></li>
+                        <li><a href="#como-funciona" class="text-neutral-400 hover:text-brand-gold transition-colors">Como Funciona</a></li>
+                        <li><a href="#sobre" class="text-neutral-400 hover:text-brand-gold transition-colors">Sobre a LV</a></li>
+                        <li><a href="#faq" class="text-neutral-400 hover:text-brand-gold transition-colors">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold mb-4">Contato</h4>
+                    <a href="https://wa.me/5585994497491" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-neutral-400 hover:text-brand-gold transition-colors mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        WhatsApp: (85) 99449-7491
+                    </a>
+                    <div class="mt-6">
+                        <a href="#" class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-neutral-800 text-neutral-400 hover:bg-brand-gold hover:text-brand-black transition-all duration-200" aria-label="Instagram (Em breve)">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-neutral-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-neutral-500">
+                <p>&copy; <span id="current-year"></span> LV Locações de Veículos. Todos os direitos reservados.</p>
+                <div class="flex gap-6">
+                    <a href="#" class="hover:text-brand-gold transition-colors">Política de Privacidade</a>
+                    <a href="#" class="hover:text-brand-gold transition-colors">Termos de Uso</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FLOATING WHATSAPP BUTTON -->
+    <a href="https://wa.me/5585994497491?text=Ol%C3%A1!%20Vi%20o%20site%20da%20LV%20Loca%C3%A7%C3%B5es%20e%20gostaria%20de%20consultar%20os%20ve%C3%ADculos%20dispon%C3%ADveis%20para%20trabalhar%20com%20aplicativo." 
+       target="_blank" 
+       rel="noopener noreferrer"
+       class="fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-xl transition-all duration-300 transform hover:scale-110 focus-visible:ring-2 focus-visible:ring-green-400 focus-visible:ring-offset-2 group"
+       aria-label="Falar no WhatsApp"
+       data-cta="whatsapp"
+       data-location="floating">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        <span class="absolute right-full mr-3 top-1/2 -translate-y-1/2 bg-brand-black text-white text-xs font-bold py-1.5 px-3 rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap pointer-events-none">
+            Falar no WhatsApp
+        </span>
+    </a>
+
+    <!-- JAVASCRIPT -->
+    <script>
+        const BUSINESS = {
+            name: "LV Locações de Veículos",
+            location: "Fortaleza e região, Ceará",
+            whatsapp: "5585994497491",
+            whatsappDisplay: "(85) 99449-7491",
+            slogan: "Seu trabalho. Seu objetivo. Nossa mobilidade."
+        };
+
+        // Vehicle Data Architecture (Honda CG Fan 160 added)
+        const vehicles = [
+            {
+                id: "byd-dolphin-mini-gs",
+                name: "BYD Dolphin Mini GS",
+                category: "Carro elétrico",
+                type: "carro",
+                description: "Uma opção moderna e econômica para mobilidade urbana e rotina de trabalho.",
+                image: "assets/byd-dolphin-mini-gs.jpg",
+                available: true
+            },
+            {
+                id: "honda-cg-fan-160",
+                name: "Honda CG Fan 160",
+                category: "Motocicleta",
+                type: "moto",
+                description: "Econômica, ágil e ideal para quem busca mobilidade no dia a dia de trabalho.",
+                image: "assets/honda-cg-fan-160.jpg",
+                available: true
+            }
+        ];
+
+        const faqData = [
+            {
+                question: "Quais veículos estão disponíveis para locação?",
+                answer: "A disponibilidade, os valores e as condições podem variar. Fale com a LV pelo WhatsApp para consultar as opções disponíveis no momento."
+            },
+            {
+                question: "A LV trabalha com carros e motos?",
+                answer: "Sim, oferecemos opções de carros e motos para atender diferentes necessidades de mobilidade para trabalho."
+            },
+            {
+                question: "Posso alugar um veículo para trabalhar com Uber?",
+                answer: "Sim, nossos veículos são adequados para trabalhar com Uber e outros aplicativos de transporte."
+            },
+            {
+                question: "Posso trabalhar com 99?",
+                answer: "Sim, os veículos disponíveis atendem aos requisitos para trabalhar com 99 e demais plataformas de aplicativo."
+            },
+            {
+                question: "Onde a LV atende?",
+                answer: "Atendemos motoristas de Fortaleza e região, no estado do Ceará."
+            },
+            {
+                question: "Como faço para consultar os valores?",
+                answer: "Os valores e condições podem variar. Fale com a LV pelo WhatsApp para receber uma consulta personalizada e atualizada."
+            },
+            {
+                question: "Quais são os requisitos para alugar?",
+                answer: "Os requisitos podem variar de acordo com o veículo e as condições vigentes. Entre em contato pelo WhatsApp para obter informações detalhadas."
+            },
+            {
+                question: "Como funciona o processo de locação?",
+                answer: "O processo é simples: escolha o veículo, fale conosco pelo WhatsApp, consulte as condições e, após a contratação, prepare-se para rodar."
+            }
+        ];
+
+        function generateWhatsAppLink(message) {
+            return `https://wa.me/${BUSINESS.whatsapp}?text=${encodeURIComponent(message)}`;
+        }
+
+        function renderVehicles(filter = 'todos') {
+            const grid = document.getElementById('vehicle-grid');
+            const emptyState = document.getElementById('empty-state');
+            grid.innerHTML = '';
+
+            const filteredVehicles = filter === 'todos' 
+                ? vehicles 
+                : vehicles.filter(v => v.type === filter);
+
+            if (filteredVehicles.length === 0) {
+                emptyState.classList.remove('hidden');
+                return;
+            } else {
+                emptyState.classList.add('hidden');
+            }
+
+            filteredVehicles.forEach(vehicle => {
+                const whatsappMessage = `Olá! Tenho interesse no ${vehicle.name} e gostaria de saber a disponibilidade e as condições de locação.`;
+                const whatsappLink = generateWhatsAppLink(whatsappMessage);
+                const availabilityText = vehicle.available ? 'Disponível para consulta' : 'Consulte disponibilidade';
+                const availabilityClass = vehicle.available ? 'text-green-400' : 'text-brand-gold';
+
+                const card = document.createElement('article');
+                card.className = 'bg-white rounded-xl overflow-hidden border border-neutral-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col';
+                card.innerHTML = `
+                    <div class="relative h-48 overflow-hidden bg-neutral-100">
+                        <img src="${vehicle.image}" 
+                             alt="${vehicle.name} - ${vehicle.category}" 
+                             class="w-full h-full object-cover"
+                             loading="lazy"
+                             onerror="this.src='https://placehold.co/800x600/171717/f59e0b?text=Imagem+do+Veículo+(Substitua+o+arquivo+local)'">
+                        <div class="absolute top-3 left-3 bg-brand-black/80 backdrop-blur-sm text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+                            ${vehicle.category}
+                        </div>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-brand-black mb-2">${vehicle.name}</h3>
+                        <p class="text-neutral-600 text-sm mb-4 flex-grow">${vehicle.description}</p>
+                        <div class="flex items-center gap-2 mb-4 text-sm font-medium ${availabilityClass}">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                            ${availabilityText}
+                        </div>
+                        <a href="${whatsappLink}" 
+                           target="_blank" 
+                           rel="noopener noreferrer"
+                           class="w-full inline-flex items-center justify-center gap-2 bg-brand-gold hover:bg-brand-goldHover text-brand-black font-bold py-3 px-4 rounded-lg transition-colors duration-200"
+                           data-cta="whatsapp"
+                           data-vehicle="${vehicle.id}"
+                           data-location="catalog"
+                           aria-label="Consultar o ${vehicle.name} pelo WhatsApp">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                            Consultar pelo WhatsApp
+                        </a>
+                    </div>
+                `;
+                grid.appendChild(card);
+            });
+        }
+
+        function renderFAQ() {
+            const container = document.getElementById('faq-container');
+            faqData.forEach((item, index) => {
+                const id = `faq-${index}`;
+                const accordionItem = document.createElement('div');
+                accordionItem.className = 'bg-white rounded-lg border border-neutral-200 overflow-hidden';
+                accordionItem.innerHTML = `
+                    <button class="w-full flex items-center justify-between p-5 text-left focus-visible:ring-2 focus-visible:ring-brand-gold focus-visible:ring-inset" 
+                            aria-expanded="false" 
+                            aria-controls="${id}"
+                            id="btn-${id}">
+                        <span class="font-bold text-brand-black pr-4">${item.question}</span>
+                        <svg class="w-5 h-5 text-brand-gold transition-transform duration-300 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                    </button>
+                    <div id="${id}" class="hidden px-5 pb-5 text-neutral-600 text-sm leading-relaxed" role="region" aria-labelledby="btn-${id}">
+                        ${item.answer}
+                    </div>
+                `;
+                
+                const btn = accordionItem.querySelector('button');
+                const content = accordionItem.querySelector('div');
+                const icon = btn.querySelector('svg');
+
+                btn.addEventListener('click', () => {
+                    const isExpanded = btn.getAttribute('aria-expanded') === 'true';
+                    
+                    document.querySelectorAll('#faq-container button').forEach(b => {
+                        b.setAttribute('aria-expanded', 'false');
+                        b.querySelector('svg').classList.remove('rotate-180');
+                        b.nextElementSibling.classList.add('hidden');
+                    });
+
+                    if (!isExpanded) {
+                        btn.setAttribute('aria-expanded', 'true');
+                        icon.classList.add('rotate-180');
+                        content.classList.remove('hidden');
+                    }
+                });
+
+                container.appendChild(accordionItem);
+            });
+        }
+
+        function filterVehicles(type) {
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                if (btn.dataset.filter === type) {
+                    btn.classList.remove('bg-neutral-800', 'text-neutral-300', 'border', 'border-neutral-700');
+                    btn.classList.add('bg-brand-gold', 'text-brand-black');
+                    btn.setAttribute('aria-pressed', 'true');
+                } else {
+                    btn.classList.add('bg-neutral-800', 'text-neutral-300', 'border', 'border-neutral-700');
+                    btn.classList.remove('bg-brand-gold', 'text-brand-black');
+                    btn.setAttribute('aria-pressed', 'false');
+                }
+            });
+            renderVehicles(type);
+        }
+
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterVehicles(btn.dataset.filter);
+            });
+        });
+
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuOpenIcon = menuBtn.querySelector('.menu-open');
+        const menuCloseIcon = menuBtn.querySelector('.menu-close');
+        const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+
+        function toggleMenu() {
+            const isExpanded = menuBtn.getAttribute('aria-expanded') === 'true';
+            menuBtn.setAttribute('aria-expanded', !isExpanded);
+            menuBtn.setAttribute('aria-label', isExpanded ? 'Abrir menu' : 'Fechar menu');
+            
+            if (isExpanded) {
+                mobileMenu.classList.add('hidden');
+                menuOpenIcon.classList.remove('hidden');
+                menuCloseIcon.classList.add('hidden');
+            } else {
+                mobileMenu.classList.remove('hidden');
+                menuOpenIcon.classList.add('hidden');
+                menuCloseIcon.classList.remove('hidden');
+            }
+        }
+
+        menuBtn.addEventListener('click', toggleMenu);
+
+        mobileNavLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                if (!mobileMenu.classList.contains('hidden')) {
+                    toggleMenu();
+                }
+            });
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && !mobileMenu.classList.contains('hidden')) {
+                toggleMenu();
+                menuBtn.focus();
+            }
+        });
+
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        document.addEventListener('DOMContentLoaded', () => {
+            renderVehicles();
+            renderFAQ();
+        });
+    </script>
+</body>
+</html>
